@@ -1,16 +1,14 @@
 <!doctype html>
-<html lang="es">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="author" content="Grupo 3 - RC" />
-    <meta name="description" content="Pagina para venta de decoraciones" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Victoriana Deco</title>
+    <title>Inicio Sesion</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin=""
+      crossorigin="anonymous"
     />
     <link
       rel="stylesheet"
@@ -19,7 +17,6 @@
     <link rel="stylesheet" href="../css/estilos.css" />
     <link rel="stylesheet" href="../css/footer.css" />
   </head>
-
   <body>
     <header>
       <!--Inicio de navbar-->
@@ -83,16 +80,82 @@
       <!--Fin de navbar-->
     </header>
     <main>
-      <div>
-<div class="col-md-6 text-center">
-  <div class="row justify-content-center">
-        
+      <h1>404 Pagina no encontrada</h1>
+
+      <nav class="navbar navbar-expand-lg header-nav">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../index.html">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbWqOzbQJ9hjWFVMi-FyH8Ib9mPDxJ7eZluBMuUl1xGw&s=10"
+              alt=""
+              class="w-25"
+            />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="../index.html"
+                  >Inicio</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./sobre-nosotros.html"
+                  >Sobre Nosotros</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./contacto.html">Contacto</a>
+              </li>
+            </ul>
+
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" href="./inicio-sesion.html"
+                  >Iniciar Sesion</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./registro.html">Registro</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      class="container mt-5">
+      <div class="row justify-content-center">
+        <div class="col-md-6 text-center">
           <h1 class="display-1">404</h1>
           <p class="lead">La página que estás buscando no se encuentra.</p>
           <a href="../index.html" class="btn btn-primary">Volver al inicio</a>
-
-      </div>
+          <main class="d-flex justify-content-center my-5">
       <form>
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label"
+            >Correo Usuario</label
+          >
+          <input
+            type="email"
+            class="form-control"
+            id="exampleInputEmail1"
+            aria-describedby="emailHelp"
+            required
+            minlength="5"
+            maxlength="40"
+          />
+        </div>
+
         <div class="mb-3">
           <label for="exampleInputUser1" class="form-label"
             >Nombre Usuario</label
@@ -121,25 +184,40 @@
             maxlength="32"
           />
         </div>
-
-        <div>
-          <small
-            >Si no tienes una cuenta. Haz click
-            <a href="./registarse.html">aqui</a></small
+        <div class="mb-3">
+          <label for="exampleInputRepPassword1" class="form-label"
+            >Repetir Contraseña</label
+          >
+          <input
+            type="password"
+            class="form-control"
+            id="exampleInputRepPassword1"
+            required
+            minlength="8"
+            maxlength="32"
+          />
+        </div>
+        <div class="mb-3 form-check">
+          <input
+            type="checkbox"
+            class="form-check-input"
+            id="exampleCheck1"
+            required
+          />
+          <label class="form-check-label" for="exampleCheck1"
+            >Aceptar terminos y condiciones</label
           >
         </div>
-
-        <div class="my-3">
-          <small>Olvidaste tu contraseña? Haz click <a href="">aqui</a></small>
-        </div>
-
         <div class="text-center">
-          <button type="submit" class="btn btn-outline-danger">Ingresar</button>
+          <button type="submit" class="btn btn-outline-danger">
+            Enviar Datos
+          </button>
         </div>
       </form>
-
-      
+        </div>
+      </div>
     </main>
+
     <footer class="pie-pagina">
       <div class="grupo-1">
         <div class="box">
@@ -183,11 +261,10 @@
           </div>
         </div>
       </div>
-</div>
+
       <div class="grupo-2">
         <p>Año 2026 --- TODOS LOS DERECHOS RESERVADOS ----</p>
       </div>
-      
     </footer>
 
     <script
