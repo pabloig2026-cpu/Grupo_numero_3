@@ -7,7 +7,7 @@
 
 .pie-pagina {
   width: 100%;
-  background-color: aqua;
+  background-color: rgb(213, 218, 218);
 }
 
 .pie-pagina .grupo-1 {
@@ -24,7 +24,7 @@
   width: 100%;
   height: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   flex-direction: column;
 }
@@ -53,7 +53,8 @@
   line-height: 45px;
   color: white;
   margin-right: 10px;
-  background-color: aqua;
+  background-color: rgb(213, 218, 218);
+
   text-align: center;
 }
 
@@ -62,11 +63,18 @@
 }
 
 .pie-pagina .grupo-2 {
-  background-color: aqua;
+  background-color: rgb(213, 218, 218);
+
   padding: 15px 10px;
   text-align: center;
   display: flex;
   color: white;
+  font-size: 20px;
+}
+
+.pie-pagina .grupo-2 h2 {
+  color: aliceblue;
+  margin-bottom: 25px;
   font-size: 20px;
 }
 
