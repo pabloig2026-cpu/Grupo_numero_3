@@ -1,0 +1,10 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.pagina-404 {
+  width: 5px;
+  height: 100px;
+}
