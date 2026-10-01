@@ -130,3 +130,26 @@
 main {
   padding-top: 150px;
 }
+
+/*para las imagenes de cartelera productos*/
+.seccion-productos {
+  margin-top: 60px;
+}
+
+.seccion-productos h3 {
+  text-align: center;
+  font-size: 28px;
+  color: #B59943;
+  margin-bottom: 25px;
+}
+
+main h1 {
+  font-size: 40px;
+  text-align: center;
+  color: #B59943;
+  margin-bottom: 25px;
+}
+
+.card:hover {
+  border: 3px solid #e1d1a1;
+}
