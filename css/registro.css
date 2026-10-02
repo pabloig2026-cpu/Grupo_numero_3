@@ -1,0 +1,208 @@
+main {
+  padding-top: 150px;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Contenedor principal ocupando toda la pantalla */
+main {
+  display: grid;
+  grid-template-columns: 1fr; /* Por defecto 1 columna en móviles */
+  min-height: 100vh;
+}
+
+/* Sección del formulario */
+.seccion-login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f4f7f6;
+  padding: 20px;
+}
+
+/* Caja del formulario */
+.contenedor-form {
+  width: 100%;
+  max-width: 400px;
+  background: #c5b4b4;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  margin-bottom: 24px;
+  color: #333;
+  text-align: center;
+}
+
+.grupo-input {
+  margin-bottom: 20px;
+}
+
+.grupo-input label {
+  display: block;
+  margin-bottom: 8px;
+  color: #666;
+  font-size: 14px;
+}
+
+.grupo-input input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+button.btn-primario {
+  width: 100%;
+  padding: 12px;
+  background-color: purple;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s;
+  font-weight: bold;
+}
+
+button.btn-primario:hover {
+  background-color: #0056b3;
+}
+
+/* Separador "O" */
+.separador {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #888;
+  margin: 20px 0;
+  font-size: 14px;
+}
+
+.separador::before,
+.separador::after {
+  content: "";
+  flex: 1;
+  border-bottom: 1px solid #ddd;
+}
+
+.separador:not(:empty)::before {
+  margin-right: 0.5em;
+}
+
+.separador:not(:empty)::after {
+  margin-left: 0.5em;
+}
+
+/* Botones de Redes Sociales */
+.btn-social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: white;
+  transition:
+    background-color 0.2s,
+    color 0.2s;
+}
+
+/* Estilos específicos para Google */
+.btn-google {
+  color: #444;
+}
+.btn-google:hover {
+  background-color: #f8f9fa;
+  border-color: #ccc;
+}
+
+/* Estilos específicos para Facebook */
+.btn-facebook {
+  background-color: #1877f2;
+  color: white;
+  border: none;
+}
+.btn-facebook:hover {
+  background-color: #166fe5;
+}
+
+/* Iconos SVG */
+.btn-social svg {
+  width: 18px;
+  height: 18px;
+  margin-right: 10px;
+}
+
+/* Cambio de diseño para pantallas medianas/grandes (Escritorio) */
+@media (min-width: 768px) {
+  main {
+    grid-template-columns: 1.2fr 1fr; /* Dos columnas */
+  }
+  .seccion-imagen {
+    display: block; /* Muestra la imagen */
+  }
+}
+/* 
+
+css de la imagen 
+*/
+
+/*clase para la imagen que gira*/
+
+.contenedor {
+  display: flex;
+  justify-content: center; /* Centra la imagen horizontalmente */
+  align-items: center; /* Centra la imagen verticalmente */
+  width: 40%; /* Aquí reduces el ancho del div (como vimos antes) */
+  height: 525px; /* Dale una altura para notar el centrado vertical */
+  margin: 0 auto; /* Opcional: centra el propio div en la pantalla */
+}
+
+/* Estilos base para la imagen circular */
+.imagen-circular {
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #ffffff;
+  justify-content: center; /* Centra en horizontal */
+  align-items: center; /* Centra en vertical */
+
+  /* Configuración del giro infinito */
+  /* animation: girarContinuo 9s linear infinite;*/
+}
+
+/* Animación de rotación limpia de 360 grados */
+@keyframes girarContinuo {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+/* Definir los movimientos con @keyframes */
+@keyframes flotarYgirar {
+  0% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-15px) rotate(180deg); /* Sube y rota a la mitad */
+  }
+  100% {
+    transform: translateY(0px) rotate(360deg); /* Vuelve a bajar y completa una vuelta */
+  }
+}

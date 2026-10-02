@@ -12,6 +12,7 @@
   max-width: 1200px;
   margin: 0 auto;
 }
+
 .navbar {
   height: 115px;
   margin: 20px;
@@ -21,6 +22,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+
   img {
     height: 100px;
     padding: 5px;
@@ -30,12 +32,14 @@
     align-items: center;
   }
 }
+
 .navbar-nav {
   display: flex;
   justify-content: start;
   align-items: start-end;
   gap: 20px;
 }
+
 .navbar-brand {
   font-weight: 500;
   color: #666777;
@@ -55,9 +59,11 @@
   white-space: nowrap;
   display: inline-block;
 }
+
 .login-button:hover {
   background-color: #00b380;
 }
+
 .navbar-toggler {
   border: none;
   font-size: 1.25rem;
@@ -68,11 +74,13 @@
   box-shadow: none;
   outline: none;
 }
+
 .nav-link {
   color: #666777;
   font-weight: 500;
   position: relative;
 }
+
 .nav-link:hover,
 .nav-link.active {
   color: #000;
@@ -90,11 +98,13 @@
   visibility: hidden;
   transition: 0.3s ease-in-out;
 }
+
 .nav-link:hover::before,
 .nav-link.active::before {
   width: 100%;
   visibility: visible;
 }
+
 @media (max-width: 991px) {
   .nav-item:hover .nav-link::before {
     content: "";
@@ -108,9 +118,43 @@
     visibility: hidden;
     transition: 0.3s ease-in-out;
   }
+
   .nav-link:hover::before,
   .nav-link.active::before {
     width: 100%;
     visibility: visible;
   }
+}
+
+/*agrego para dar espacio con navbar*/
+main {
+  padding-top: 150px;
+}
+
+/*para las imagenes de cartelera productos*/
+.seccion-productos {
+  margin-top: 60px;
+}
+
+.seccion-productos h3 {
+  text-align: center;
+  font-size: 28px;
+  color: #B59943;
+  margin-bottom: 25px;
+}
+
+main h1 {
+  font-size: 40px;
+  text-align: center;
+  color: #B59943;
+  margin-bottom: 25px;
+}
+
+.card:hover {
+  border: 3px solid #e1d1a1;
+}
+
+h6 {
+  text-align: center;
+  color: #B59943;
 }
