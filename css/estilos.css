@@ -153,3 +153,8 @@ main h1 {
 .card:hover {
   border: 3px solid #e1d1a1;
 }
+
+h6 {
+  text-align: center;
+  color: #B59943;
+}
