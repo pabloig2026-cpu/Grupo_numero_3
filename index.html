@@ -22,7 +22,6 @@
 
   <body>
     <header>
-      <!--Inicio de navbar-->
       <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container-fluid">
           <img src="./img/logo 1.png" alt="" class="img" />
@@ -62,11 +61,16 @@
                     >Sobre Nosotros</a
                   >
                 </li>
+                <li class="nav-item">
+                  <a class="nav-link mx-lg-2" href="./pages/error_404.html"
+                    >Galeria</a
+                  >
+                </li>
               </ul>
             </div>
           </div>
           <div class="d-flex align-items-center gap-4 me-3">
-            <a href="./pages/error_404.html" class="login-button"
+            <a href="./pages/suscribirse" class="login-button"
               >Suscribirse</a
             >
             <button
@@ -77,7 +81,7 @@
               aria-controls="offcanvasNavbar"
               aria-label="Toggle navigation"
             ></button>
-            <a href="./pages/login.html" class="login-button">Registrarse</a>
+            <a href="./pages/login.html" class="login-button">Iniciar Sesión</a>
             <button
               class="navbar-toggler"
               type="button"
@@ -91,10 +95,8 @@
           </div>
         </div>
       </nav>
-      <!--Fin de navbar-->
     </header>
     <main>
-
       <div
         id="carouselExampleSlidesOnly"
         class="carousel slide"
@@ -133,7 +135,60 @@
           </div>
         </div>
       </div>
-      <h1>continuamos luego</h1>
+
+      <div class="container mt-5">
+        <div class="row">
+          <div class="col-lg-8 mb-4">
+            <h2>Listas de Entradas</h2>
+            <p>Contenido principal</p>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="card mb-4">
+              <div class="card-header">Buscar</div>
+              <div class="card-body">
+                <form class="d-flex">
+                  <input
+                    class="form-control me-2"
+                    type="search"
+                    placeholder="Buscar artículos..."
+                    aria-label="Buscar"
+                  />
+                  <button class="btn btn-primary" type="submit">Buscar</button>
+                </form>
+              </div>
+            </div>
+
+            <div class="card mb-4">
+              <div class="card-header">Categorías</div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                  <a href="#" class="text-decoration-none">Almohadas</a>
+                </li>
+                <li class="list-group-item">
+                  <a href="#" class="text-decoration-none">Espejos</a>
+                </li>
+                <li class="list-group-item">
+                  <a href="#" class="text-decoration-none">Pie de Cama</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="card mb-4 d-none d-md-block">
+              <div class="card-header">Publicidad</div>
+              <div class="card-body text-center d-flex">
+                <img
+                  src="./img/logo 1.png"
+                  alt="Publicidad"
+                  class="img-fluid"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <h1>Continuamos luego</h1>
     </main>
     <footer class="pie-pagina">
       <div class="grupo-1">
