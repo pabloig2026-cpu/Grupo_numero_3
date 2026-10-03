@@ -4,7 +4,6 @@
   box-sizing: border-box;
 }
 
-.pagina-404 {
-  width: 5px;
-  height: 100px;
+main {
+  padding-top: 80px;
 }
