@@ -120,7 +120,7 @@
 
           <div
             class="d-flex align-items-center justify-content-end gap-4 me-3 botones"
-          >
+          > 
             <div class="d-none d-lg-flex align-items-center gap-4">
               <button
                 type="button"
@@ -157,95 +157,67 @@
         aria-labelledby="modalSuscripcionLabel"
         aria-hidden="true"
       >
-        <div class="modal-dialog modal-dialog-centered">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h1 class="modal-title fs-5" id="modalSuscripcionLabel">
-                Suscribite a nuestro blog
-              </h1>
-
-              <button
-                type="button"
-                class="btn-close"
-                data-bs-dismiss="modal"
-                aria-label="Cerrar"
-              ></button>
-            </div>
-
-            <form id="formSuscripcion">
-              <div class="modal-body">
-                <p>Dejanos tus datos y recibí las novedades por email.</p>
-
-                <div class="mb-3">
-                  <label for="subNombre" class="col-form-label">
-                    Nombre:
-                  </label>
-
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="subNombre"
-                    required
-                  />
-                </div>
-
-                <div class="mb-3">
-                  <label for="subApellido" class="col-form-label">
-                    Apellido:
-                  </label>
-
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="subApellido"
-                    required
-                  />
-                </div>
-
-                <div class="mb-3">
-                  <label for="subEmail" class="col-form-label"> Email: </label>
-
-                  <input
-                    type="email"
-                    class="form-control"
-                    id="subEmail"
-                    required
-                  />
-                </div>
-
-                <div class="form-check">
-                  <input
-                    class="form-check-input"
-                    type="checkbox"
-                    id="subAcepto"
-                    required
-                  />
-
-                  <label class="form-check-label" for="subAcepto">
-                    Acepto recibir notificaciones por email
-                  </label>
-                </div>
-              </div>
-
-              <div class="modal-footer">
-                <button
-                  type="button"
-                  class="btn btn-secondary"
-                  data-bs-dismiss="modal"
-                >
-                  Cancelar
-                </button>
-
-                <button type="submit" class="btn btn-primary">
-                  Suscribirme
-                </button>
-              </div>
-            </form>
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+  </div>
+</nav>
+ 
+<!-- MODAL DE SUSCRIPCIÓN (va fuera del nav, por ejemplo antes del BODY-->
+<div
+  class="modal fade"
+  id="modalSuscripcion"
+  tabindex="-1"
+  aria-labelledby="modalSuscripcionLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="modalSuscripcionLabel">
+          Suscribite a nuestro blog
+        </h1>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Cerrar"
+        ></button>
+      </div>
+      <form id="formSuscripcion">
+        <div class="modal-body">
+          <p>Dejanos tus datos y recibí las novedades por email.</p>
+          <div class="mb-3">
+            <label for="subNombre" class="col-form-label">Nombre:</label>
+            <input type="text" class="form-control" id="subNombre" required />
+          </div>
+          <div class="mb-3">
+            <label for="subApellido" class="col-form-label">Apellido:</label>
+            <input type="text" class="form-control" id="subApellido" required />
+          </div>
+          <div class="mb-3">
+            <label for="subEmail" class="col-form-label">Email:</label>
+            <input type="email" class="form-control" id="subEmail" required />
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="subAcepto" required />
+            <label class="form-check-label" for="subAcepto">
+              Acepto recibir notificaciones por email
+            </label>
           </div>
         </div>
-      </div>
-    </header>
-
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+            Cancelar
+          </button>
+          <button type="submit" class="btn btn-primary">Suscribirme</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+<!--Fin del Navbar-->
+</header>
     <main>
       <div
         id="carouselExampleSlidesOnly"
