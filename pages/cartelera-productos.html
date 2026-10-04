@@ -5,28 +5,35 @@
     <meta name="author" content="Grupo 3 - RC" />
     <meta name="description" content="Pagina para venta de decoraciones" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>Victoriana Deco</title>
+
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
       crossorigin="anonymous"
     />
+
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
     />
+
     <link rel="stylesheet" href="../css/estilos.css" />
     <link rel="stylesheet" href="../css/footer.css" />
+    <link rel="stylesheet" href="../css/navbar.css" />
   </head>
 
   <body>
     <header>
-      <!--Inicio de navbar-->
+      <!-- Inicio Navbar -->
       <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container-fluid">
           <img src="../img/logo 1.png" alt="" class="img" />
-          <a class="navbar-brand me-auto" href="#">Victoriana Decoraciones</a>
+
+          <a class="navbar-brand me-auto" href="#"> Victoriana Decoraciones </a>
+
           <div
             class="offcanvas offcanvas-end"
             tabindex="-1"
@@ -34,7 +41,12 @@
             aria-labelledby="offcanvasNavbarLabel"
           >
             <div class="offcanvas-header">
-              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Logo</h5>
+              <img src="../img/img_fondo_azul2.png" alt="" />
+
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                Victoriana Decoraciones
+              </h5>
+
               <button
                 type="button"
                 class="btn-close"
@@ -42,44 +54,88 @@
                 aria-label="Close"
               ></button>
             </div>
-            <div class="offcanvas-body">
-              <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
-                <li class="nav-item">
+
+            <div class="conteiner-elementos d-flex justify-content-around">
+              <div class="offcanvas-body">
+                <ul class="navbar-nav flex-grow-1 pe-3">
+                  <li class="nav-item">
+                    <a
+                      class="nav-link mx-lg-2"
+                      aria-current="page"
+                      href="../index.html"
+                    >
+                      Inicio
+                    </a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link mx-lg-2" href="../pages/contacto.html">
+                      Contacto
+                    </a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a
+                      class="nav-link mx-lg-2"
+                      href="../pages/sobre_nosotros.html"
+                    >
+                      Sobre Nosotros
+                    </a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a
+                      class="nav-link mx-lg-2 active"
+                      href="../pages/cartelera-productos.html"
+                    >
+                      Galeria
+                    </a>
+                  </li>
+                </ul>
+
+                <!-- Botones dentro de la hamburguesa -->
+                <div class="d-flex flex-column gap-3 d-lg-none mt-3">
+                  <button
+                    type="button"
+                    class="login-button text-center"
+                    data-bs-toggle="modal"
+                    data-bs-target="#modalSuscripcion"
+                    data-bs-dismiss="offcanvas"
+                  >
+                    Suscribirse
+                  </button>
+
                   <a
-                    class="nav-link mx-lg-2 active"
-                    aria-current="page"
-                    href="index.html"
-                    >Inicio</a
+                    href="../pages/login.html"
+                    class="login-button text-center"
                   >
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link mx-lg-2" href="../pages/contacto.html"
-                    >Contacto</a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a
-                    class="nav-link mx-lg-2"
-                    href="../pages/sobre_nosotros.html"
-                    >Sobre Nosotros</a
-                  >
-                </li>
-              </ul>
+                    Iniciar Sesión
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="d-flex align-items-center gap-4 me-3">
-            <a href="../pages/error_404.html" class="login-button"
-              >Suscribirse</a
-            >
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-bs-toggle="offcanvas"
-              data-bs-target="#offcanvasNavbar"
-              aria-controls="offcanvasNavbar"
-              aria-label="Toggle navigation"
-            ></button>
-            <a href="../pages/login.html" class="login-button">Registrarse</a>
+
+          <!-- Botones para pantallas grandes -->
+          <div
+            class="d-flex align-items-center justify-content-end gap-4 me-3 botones"
+          >
+            <div class="d-none d-lg-flex align-items-center gap-4">
+              <button
+                type="button"
+                class="login-button"
+                data-bs-toggle="modal"
+                data-bs-target="#modalSuscripcion"
+              >
+                Suscribirse
+              </button>
+
+              <a href="../pages/login.html" class="login-button">
+                Iniciar Sesión
+              </a>
+            </div>
+
+            <!-- Botón hamburguesa -->
             <button
               class="navbar-toggler"
               type="button"
@@ -93,12 +149,112 @@
           </div>
         </div>
       </nav>
-      <!--Fin de navbar-->
+
+      <!-- Modal de suscripción -->
+      <div
+        class="modal fade"
+        id="modalSuscripcion"
+        tabindex="-1"
+        aria-labelledby="modalSuscripcionLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="modalSuscripcionLabel">
+                Suscribite a nuestro blog
+              </h1>
+
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Cerrar"
+              ></button>
+            </div>
+
+            <form id="formSuscripcion">
+              <div class="modal-body">
+                <p>Dejanos tus datos y recibí las novedades por email.</p>
+
+                <div class="mb-3">
+                  <label for="subNombre" class="col-form-label">
+                    Nombre:
+                  </label>
+
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="subNombre"
+                    required
+                  />
+                </div>
+
+                <div class="mb-3">
+                  <label for="subApellido" class="col-form-label">
+                    Apellido:
+                  </label>
+
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="subApellido"
+                    required
+                  />
+                </div>
+
+                <div class="mb-3">
+                  <label for="subEmail" class="col-form-label"> Email: </label>
+
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="subEmail"
+                    required
+                  />
+                </div>
+
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    id="subAcepto"
+                    required
+                  />
+
+                  <label class="form-check-label" for="subAcepto">
+                    Acepto recibir notificaciones por email
+                  </label>
+                </div>
+              </div>
+
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  data-bs-dismiss="modal"
+                >
+                  Cancelar
+                </button>
+
+                <button type="submit" class="btn btn-primary">
+                  Suscribirme
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <!-- Fin del Navbar -->
     </header>
+
     <main>
+      <!-- ALMOHADAS -->
       <section class="seccion-productos container">
         <h1>CONOCE NUESTROS PRODUCTOS</h1>
         <h3>ALMOHADAS DECORATIVAS</h3>
+
         <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-4">
           <div class="col">
             <a href="./detalle_Producto01.html">
@@ -108,8 +264,10 @@
                   class="card-img-top"
                   alt="Almohadón decorativo"
                 />
+
                 <div class="card-body">
                   <h6>Almohadones Estilo Minimalista & Warm</h6>
+
                   <p class="card-text">
                     Confeccionados en textiles de tono marfil con franjas y
                     texturas negras...
@@ -127,8 +285,10 @@
                   class="card-img-top"
                   alt="Almohadón decorativo"
                 />
+
                 <div class="card-body">
                   <h6>Almohadón Lino Náutico Azul</h6>
+
                   <p class="card-text">
                     Tejido de lino rústico en combinación azul y crema con...
                   </p>
@@ -145,8 +305,10 @@
                   class="card-img-top"
                   alt="Almohadón decorativo"
                 />
+
                 <div class="card-body">
                   <h6>Almohadones Lino Terracota & Crema</h6>
+
                   <p class="card-text">
                     Confeccionados en textiles livianos de textura suave...
                   </p>
@@ -163,8 +325,10 @@
                   class="card-img-top"
                   alt="Almohadón decorativo"
                 />
+
                 <div class="card-body">
                   <h6>Almohadón Lino Gris & Crema Texturado</h6>
+
                   <p class="card-text">
                     Confeccionado en tusor/lino de alta calidad con bordes...
                   </p>
@@ -176,7 +340,8 @@
       </section>
 
       <section class="seccion-productos container">
-        <h3>ALFOMBRAS Y MANTON</h3>
+        <h3>ALFOMBRAS Y MANTAS</h3>
+
         <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-4">
           <div class="col">
             <a href="../pages/detalle_Producto02.html">
@@ -184,10 +349,12 @@
                 <img
                   src="../img/gal-prod/mdf/alfombra-01.jpeg"
                   class="card-img-top"
-                  alt="alfombra"
+                  alt="Alfombra"
                 />
+
                 <div class="card-body">
                   <h6>Alfombra Bajada de Cama Textura Rib Crema</h6>
+
                   <p class="card-text">
                     Pelo largo de alta densidad con acabado acanalado y
                     textura...
@@ -205,8 +372,10 @@
                   class="card-img-top"
                   alt="Alfombra"
                 />
+
                 <div class="card-body">
                   <h6>Alfombra Bajada de Cama Textura Rib Gris</h6>
+
                   <p class="card-text">
                     Pelo largo ultra suave con diseño en canelones/franjas
                     horizontales...
@@ -224,11 +393,13 @@
                   class="card-img-top"
                   alt="Alfombra"
                 />
+
                 <div class="card-body">
                   <h6>Alfombra Camino SúperSoft Visión</h6>
+
                   <p class="card-text">
-                    Pelo largo de alta densidad con textura ultra suave y bordes
-                    ...
+                    Pelo largo de alta densidad con textura ultra suave y
+                    bordes...
                   </p>
                 </div>
               </div>
@@ -243,8 +414,10 @@
                   class="card-img-top"
                   alt="Manton"
                 />
+
                 <div class="card-body">
                   <h6>Manta Tejida Textura Geométrica & Flecos</h6>
+
                   <p class="card-text">
                     Confeccionada en hilado suave de tono marfil/arena, con
                     trama...
@@ -256,8 +429,10 @@
         </div>
       </section>
 
+      <!-- PIE DE CAMA -->
       <section class="seccion-productos container">
         <h3>PIE DE CAMA</h3>
+
         <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-4">
           <div class="col">
             <a href="../pages/detalle_Producto03.html">
@@ -267,8 +442,10 @@
                   class="card-img-top"
                   alt="Pie de Cama"
                 />
+
                 <div class="card-body">
                   <h6>Pie de Cama Lino Liso Avellana</h6>
+
                   <p class="card-text">
                     Tira de pie de cama confeccionada en género de lino
                     lavado...
@@ -286,8 +463,10 @@
                   class="card-img-top"
                   alt="Pie de Cama"
                 />
+
                 <div class="card-body">
                   <h6>Pie de Cama Liso Gris Grafito</h6>
+
                   <p class="card-text">
                     Camino de cama en tejido opaco de alta calidad y tono
                     carbón...
@@ -305,8 +484,10 @@
                   class="card-img-top"
                   alt="Pie de Cama"
                 />
+
                 <div class="card-body">
                   <h6>Pie de Cama Rayado Rustik Terracota</h6>
+
                   <p class="card-text">
                     Manta/camino tejido a mano con diseño de rayas en tonos
                     terrac...
@@ -324,8 +505,10 @@
                   class="card-img-top"
                   alt="Pie de Cama"
                 />
+
                 <div class="card-body">
                   <h6>Pie de Cama Lino Liso Mostaza</h6>
+
                   <p class="card-text">
                     Camino de cama amplio en género de lino lavado de alta
                     calidad...
@@ -337,8 +520,10 @@
         </div>
       </section>
 
+      <!-- PILOW -->
       <section class="seccion-productos container">
         <h3>PILOW</h3>
+
         <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-4">
           <div class="col">
             <a href="../pages/detalle_Producto04.html">
@@ -348,8 +533,10 @@
                   class="card-img-top"
                   alt="Pilow"
                 />
+
                 <div class="card-body">
                   <h6>Pillow de Asiento Rayado Grey Style</h6>
+
                   <p class="card-text">
                     Colchoneta mullida acolchada para sillón en combinación...
                   </p>
@@ -366,8 +553,10 @@
                   class="card-img-top"
                   alt="Pilow"
                 />
+
                 <div class="card-body">
                   <h6>Pillow Protector de Asiento Blanco Pure</h6>
+
                   <p class="card-text">
                     Colchoneta mullida acolchada en color blanco marfil...
                   </p>
@@ -384,8 +573,10 @@
                   class="card-img-top"
                   alt="Pilow"
                 />
+
                 <div class="card-body">
                   <h6>Pillow Protector de Asiento Gris Grafito Claro</h6>
+
                   <p class="card-text">
                     Colchoneta acolchada en tono gris medio de estilo sobrio...
                   </p>
@@ -402,8 +593,10 @@
                   class="card-img-top"
                   alt="Pilow"
                 />
+
                 <div class="card-body">
                   <h6>Pillow Protector de Asiento Black Classic</h6>
+
                   <p class="card-text">
                     Colchoneta acolchada para sillón en color negro mate...
                   </p>
@@ -413,8 +606,9 @@
           </div>
         </div>
       </section>
-      <!-- ...17 veces, cambiando img y texto... -->
     </main>
+
+    <!-- FOOTER -->
     <footer class="pie-pagina">
       <div class="grupo-1">
         <div class="box">
@@ -431,6 +625,7 @@
             puntualmente de Almohadas, Espejos, Textiles, Melaminas y Pie de
             cama para crear espacios únicos y especiales.
           </p>
+
           <p>
             Trabajamos para ofrecer y brindar productos de gran calidad y
             diseños para diferentes ocasiones, desempeñanos nuestra actividad
