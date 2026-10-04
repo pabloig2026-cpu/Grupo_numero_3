@@ -158,3 +158,16 @@ h6 {
   text-align: center;
   color: #B59943;
 }
+
+.img-css img {
+  height: 50vh;
+  object-fit: cover;
+  object-position: center bottom;
+  margin: 30px 0px;
+  top: 0;
+}
+
+/*saco subrayado*/
+a {
+  text-decoration: none;
+}
