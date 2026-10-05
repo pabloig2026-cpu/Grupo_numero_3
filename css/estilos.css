@@ -9,14 +9,14 @@
   height: 500px;
   object-fit: cover;
   /*era cover*/
-   max-width: 1200px;
+  max-width: 1200px;
   margin: 0 auto;
-} 
+}
 
 /*para las imagenes de cartelera productos*/
- .seccion-productos {
+.seccion-productos {
   margin-top: 60px;
-} 
+}
 
 .seccion-productos h3 {
   text-align: center;
@@ -42,7 +42,7 @@ h6 {
 }
 
 .img-css img {
-  height: 50vh;
+  height: 90vh;
   object-fit: cover;
   object-position: center bottom;
   margin: 30px 0px;
@@ -50,6 +50,19 @@ h6 {
 }
 
 /*saco subrayado*/
- a {
+a {
   text-decoration: none;
-}  
+}
+
+.consulta-precio {
+  background-color: rgb(181, 153, 67);
+  padding: 15px 20px;
+  border-radius: 8px;
+  text-align: center;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+
+.consulta-precio:hover {
+  background-color: rgb(231, 213, 160);
+}
