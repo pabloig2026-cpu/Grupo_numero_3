@@ -17,6 +17,16 @@
     align-items: center;
   }
 }
+.container-fluid{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 3px ;
+  .navbar-toggler{
+    justify-content: end;
+    align-items: end;
+  }
+}
 
 .navbar-nav {
   display: flex;
@@ -53,6 +63,9 @@
 .navbar-toggler {
   border: none;
   font-size: 1.25rem;
+  padding: 0;
+  
+
 }
 
 .navbar-toggler:focus,
