@@ -38,15 +38,15 @@
 .navbar-brand {
   
   font-weight: 500;
-  color: #666777;
+  color:rgb(81, 71, 39);
   font-size: 19.5px;
   transition: 0.3s color;
   font-family: "Times New Roman", Times, serif;
 }
 
 .login-button {
-  background-color: #009970;
-  color: #fff;
+  background-color:rgb(181, 153, 67);
+  color: #000;
   font-size: 16px;
   padding: 8px 20px;
   border-radius: 50px;
@@ -57,7 +57,7 @@
 }
 
 .login-button:hover {
-  background-color: #00b380;
+  background-color:  rgb(243, 236, 227) ;
 }
 
 .navbar-toggler {
@@ -93,7 +93,7 @@
   transform: translateX(-50%);
   width: 0;
   height: 2px;
-  background-color: #00b380;
+  background-color:  rgb(181, 153, 67);
   visibility: hidden;
   transition: 0.3s ease-in-out;
 }
@@ -113,7 +113,7 @@
     transform: translateX(-50%);
     width: 0;
     height: 2px;
-    background-color: #00b380;
+    background-color: rgb(181, 153, 67);
     visibility: hidden;
     transition: 0.3s ease-in-out;
   }
