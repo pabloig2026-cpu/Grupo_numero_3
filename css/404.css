@@ -1,7 +1,11 @@
 * {
   margin: 0px;
-  padding: 10px;
+  padding: 0px;
   box-sizing: border-box;
+}
+
+main {
+  padding: 50px 0px !important;
 }
 
 .pagina-404 {
