@@ -3,9 +3,9 @@
   margin: 20px;
   border-radius: 15px;
   background-color: rgb(213, 218, 218);
-  padding: 0.5rem;
+  padding: 0;
   display: flex;
-  justify-content: space-between;
+  justify-content:space-between;
   align-items: center;
 
   img {
