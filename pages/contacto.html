@@ -19,15 +19,18 @@
     <link rel="stylesheet" href="../css/estilos.css" />
     <link rel="stylesheet" href="../css/footer.css" />
     <link rel="stylesheet" href="../css/contacto.css" />
+    <link rel="stylesheet" href="../css/navbar.css" />
   </head>
 
   <body>
     <header>
-      <!--Inicio de navbar-->
+      <!-- Inicio Navbar -->
       <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container-fluid">
           <img src="../img/logo 1.png" alt="" class="img" />
-          <a class="navbar-brand me-auto" href="#">Victoriana Decoraciones</a>
+
+          <a class="navbar-brand me-auto" href="#"> Victoriana Decoraciones </a>
+
           <div
             class="offcanvas offcanvas-end"
             tabindex="-1"
@@ -35,7 +38,12 @@
             aria-labelledby="offcanvasNavbarLabel"
           >
             <div class="offcanvas-header">
-              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Logo</h5>
+              <img src="../img/img_fondo_azul2.png" alt="" />
+
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                Victoriana Decoraciones
+              </h5>
+
               <button
                 type="button"
                 class="btn-close"
@@ -43,48 +51,88 @@
                 aria-label="Close"
               ></button>
             </div>
-            <div class="offcanvas-body">
-              <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
-                <li class="nav-item">
-                  <a
-                    class="nav-link mx-lg-2"
-                    aria-current="page"
-                    href="../index.html"
-                    >Inicio</a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link mx-lg-2 active" href="contacto.html"
-                    >Contacto</a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link mx-lg-2" href="sobre_nosotros.html"
-                    >Sobre Nosotros</a
-                  >
-                </li>
 
-              <li class="nav-item">
-                  <a class="nav-link mx-lg-2" href="../pages/error_404.html"
-                    >Galeria</a
+            <div class="conteiner-elementos d-flex justify-content-around">
+              <div class="offcanvas-body">
+                <ul class="navbar-nav flex-grow-1 pe-3">
+                  <li class="nav-item">
+                    <a
+                      class="nav-link mx-lg-2"
+                      aria-current="page"
+                      href="../index.html"
+                    >
+                      Inicio
+                    </a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link mx-lg-2 active" href="../pages/contacto.html">
+                      Contacto
+                    </a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a
+                      class="nav-link mx-lg-2"
+                      href="../pages/sobre_nosotros.html"
+                    >
+                      Sobre Nosotros
+                    </a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a
+                      class="nav-link mx-lg-2"
+                      href="../pages/cartelera-productos.html"
+                    >
+                      Galeria
+                    </a>
+                  </li>
+                </ul>
+
+                <!-- Botones dentro de la hamburguesa -->
+                <div class="d-flex flex-column gap-3 d-lg-none mt-3">
+                  <button
+                    type="button"
+                    class="login-button text-center"
+                    data-bs-toggle="modal"
+                    data-bs-target="#modalSuscripcion"
+                    data-bs-dismiss="offcanvas"
                   >
-                </li>
-              </ul>
+                    Suscribirse
+                  </button>
+
+                  <a
+                    href="../pages/login.html"
+                    class="login-button text-center"
+                  >
+                    Iniciar Sesión
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="d-flex align-items-center gap-4 me-3">
-            <a href="../pages/suscribirse" class="login-button"
-              >Suscribirse</a
-            >
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-bs-toggle="offcanvas"
-              data-bs-target="#offcanvasNavbar"
-              aria-controls="offcanvasNavbar"
-              aria-label="Toggle navigation"
-            ></button>
-            <a href="../pages/login.html" class="login-button">Iniciar Sesión</a>
+
+          <!-- Botones para pantallas grandes -->
+          <div
+            class="d-flex align-items-center justify-content-end gap-4 me-3 botones"
+          >
+            <div class="d-none d-lg-flex align-items-center gap-4">
+              <button
+                type="button"
+                class="login-button"
+                data-bs-toggle="modal"
+                data-bs-target="#modalSuscripcion"
+              >
+                Suscribirse
+              </button>
+
+              <a href="../pages/login.html" class="login-button">
+                Iniciar Sesión
+              </a>
+            </div>
+
+            <!-- Botón hamburguesa -->
             <button
               class="navbar-toggler"
               type="button"
@@ -98,60 +146,188 @@
           </div>
         </div>
       </nav>
-      <!--Fin de navbar-->
+
+      <!-- Modal de suscripción -->
+      <div
+        class="modal fade"
+        id="modalSuscripcion"
+        tabindex="-1"
+        aria-labelledby="modalSuscripcionLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="modalSuscripcionLabel">
+                Suscribite a nuestro blog
+              </h1>
+
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Cerrar"
+              ></button>
+            </div>
+
+            <form id="formSuscripcion">
+              <div class="modal-body">
+                <p>Dejanos tus datos y recibí las novedades por email.</p>
+
+                <div class="mb-3">
+                  <label for="subNombre" class="col-form-label">
+                    Nombre:
+                  </label>
+
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="subNombre"
+                    required
+                  />
+                </div>
+
+                <div class="mb-3">
+                  <label for="subApellido" class="col-form-label">
+                    Apellido:
+                  </label>
+
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="subApellido"
+                    required
+                  />
+                </div>
+
+                <div class="mb-3">
+                  <label for="subEmail" class="col-form-label"> Email: </label>
+
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="subEmail"
+                    required
+                  />
+                </div>
+
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    id="subAcepto"
+                    required
+                  />
+
+                  <label class="form-check-label" for="subAcepto">
+                    Acepto recibir notificaciones por email
+                  </label>
+                </div>
+              </div>
+
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  data-bs-dismiss="modal"
+                >
+                  Cancelar
+                </button>
+
+                <button type="submit" class="btn btn-primary">
+                  Suscribirme
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <!-- Fin del Navbar -->
     </header>
-    <main>
-      <!--Hero section-->
-      <section class="hero-section">
-      </section>
-      <!--Hero section-->
-  
-    <section class="contact-section-todo">
-      <div class="row justify-content-evenly">
-      <div class="col-4">
-        <h2>Envíanos tu consulta</h2>
+    <main class="main-contacto">
+      <!--  <section class="hero-section mb-5">
+        
+      </section> -->
+
+      <section class="contact-section-todo">
+        <div class="container">
+          <div class="row justify-content-evenly">
+            <div class="col-6 form-css">
+              <h2>Envíanos tu consulta</h2>
               <form class="formulario">
                 <div class="mb-3">
                   <label for="name" class="form-label">Nombre</label>
-                  <input type="text" class="form-control" id="name" placeholder="Tu nombre">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="name"
+                    placeholder="Tu nombre"
+                  />
                 </div>
                 <div class="mb-3">
                   <label for="email" class="form-label">Email</label>
-                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Tu correo electrónico">
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="exampleInputEmail1"
+                    aria-describedby="emailHelp"
+                    placeholder="Tu correo electrónico"
+                  />
                 </div>
                 <div class="mb-3">
-                  <label for="exampleFormControlcomentario1" class="form-label">Deja un comentario</label>
-                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                  <label for="exampleFormControlcomentario1" class="form-label"
+                    >Deja un comentario</label
+                  >
+                  <textarea
+                    class="form-control"
+                    id="exampleFormControlTextarea1"
+                    rows="3"
+                  ></textarea>
                 </div>
-                <button type="submit" class="btn btn-primary">Enviar mensaje</button>
-              </form> 
-      </div>
-      <div class="col-4">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3560.105917472265!2d-65.20974192476646!3d-26.836583276692625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94225d3ad7f30f1d%3A0xf8606cd659b8e3e4!2sRollingCode%20School!5e0!3m2!1ses-419!2sar!4v1790806400211!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
-      </div>
-    </div>
-
-          <div class="container-info">
-            <div class="row">
-              <div class="col">
-              <div class="colocar">
-                <h2>Contáctanos</h2>
+                <button type="submit" class="btn btn-primary">
+                  Enviar mensaje
+                </button>
+              </form>
+            </div>
+            <div class="col-6 map-css">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3560.105917472265!2d-65.20974192476646!3d-26.836583276692625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94225d3ad7f30f1d%3A0xf8606cd659b8e3e4!2sRollingCode%20School!5e0!3m2!1ses-419!2sar!4v1790806400211!5m2!1ses-419!2sar"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="strict-origin-when-cross-origin"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="container-info">
+        <div class="row">
+          <div class="col">
+            <div class="colocar">
+              <h2>Contáctanos</h2>
               <p>
                 Si tienes alguna pregunta, comentario o sugerencia, no dudes en
                 contactarnos. Estamos aquí para ayudarte.
               </p>
               <ul class="contact-info">
-                <li><i class="bi bi-geo-alt"></i> Dirección: Calle Falsa 123, Ciudad</li>
-                <li><i class="bi bi-envelope"></i> Email:
+                <li>
+                  <i class="bi bi-geo-alt"></i> Dirección: Calle Falsa 123,
+                  Ciudad
+                </li>
+                <li>
+                  <i class="bi bi-envelope"></i> Email:
                   <a href="mailto:info@victoriana.com">info@victoriana.com</a>
                 </li>
-                <li><i class="bi bi-telephone"></i> Teléfono: +59 3813990987</li>
+                <li>
+                  <i class="bi bi-telephone"></i> Teléfono: +59 3813990987
+                </li>
               </ul>
-              </div>
-            </div>
             </div>
           </div>
-      </section>  
+        </div>
+      </div>
     </main>
     <footer class="pie-pagina">
       <div class="grupo-1">
@@ -165,12 +341,14 @@
           <h2>Acerca de Nosotros</h2>
 
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor quis
-            saepe, laborum
+            Somos un emprendimiento dedicado a la venta de decoraciones
+            puntualmente de Almohadas, Espejos, Textiles, Melaminas y Pie de
+            cama para crear espacios únicos y especiales.
           </p>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor quis
-            saepe, laborum
+            Trabajamos para ofrecer y brindar productos de gran calidad y
+            diseños para diferentes ocasiones, desempeñanos nuestra actividad
+            actualmente en la Provincia de Tucumán.
           </p>
         </div>
 
@@ -201,7 +379,7 @@
       </div>
 
       <div class="grupo-2">
-        <h2>© 2026 Victoriana Decoraciones · Todos los derechos reservados</h2>
+        <p>Año 2026 --- TODOS LOS DERECHOS RESERVADOS ----</p>
       </div>
     </footer>
 

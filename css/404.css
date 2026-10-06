@@ -4,6 +4,20 @@
   box-sizing: border-box;
 }
 
-main {
-  padding-top: 80px;
+.pagina-404 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.h2 {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  margin-top: 0;
+}
+
+.h3 {
+  text-align: center;
+  margin: 5px;
 }
