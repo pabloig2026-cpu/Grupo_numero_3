@@ -9,14 +9,14 @@ main{
   background-size: cover;
   background-position: center;
   padding: auto;
-  height: 120vh;
+  
 }
 .main-contacto{
  position: relative;
   z-index: 1;
   background-color: rgba(0, 0, 0, 0.5);
   padding: auto;
-  height: 127vh;
+  height: 135vh;
 }
 
 .hero-content-section-todo {
