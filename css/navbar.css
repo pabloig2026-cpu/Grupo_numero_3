@@ -3,9 +3,9 @@
   margin: 20px;
   border-radius: 15px;
   background-color: rgb(213, 218, 218);
-  padding: 0.5rem;
+  padding: 0;
   display: flex;
-  justify-content: space-between;
+  justify-content:space-between;
   align-items: center;
 
   img {
@@ -15,6 +15,16 @@
     display: flex;
     justify-content: space-between  ;
     align-items: center;
+  }
+}
+.container-fluid{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 3px ;
+  .navbar-toggler{
+    justify-content: end;
+    align-items: end;
   }
 }
 
@@ -53,6 +63,9 @@
 .navbar-toggler {
   border: none;
   font-size: 1.25rem;
+  padding: 0;
+  
+
 }
 
 .navbar-toggler:focus,
