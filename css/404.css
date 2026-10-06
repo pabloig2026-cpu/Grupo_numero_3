@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+main {
+  padding: 50px 0px !important;
+}
+
 .pagina-404 {
   display: flex;
   justify-content: center;
