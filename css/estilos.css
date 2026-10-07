@@ -49,6 +49,14 @@ h6 {
   top: 0;
 }
 
+/*responsive en mobile*/
+@media screen and (max-width: 800px) {
+  .img-css img {
+    height: 300px;
+    /* altura fija cómoda en mobile */
+  }
+}
+
 /*saco subrayado*/
 a {
   text-decoration: none;
@@ -65,4 +73,12 @@ a {
 
 .consulta-precio:hover {
   background-color: rgb(231, 213, 160);
+}
+
+@media screen and (max-width: 800px) {
+  .container-detalle-producto {
+    width: 90%;
+    gap: 30px;
+    padding: 35px 0;
+  }
 }
