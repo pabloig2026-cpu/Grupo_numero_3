@@ -25,14 +25,19 @@
     <link rel="stylesheet" href="../css/estilos.css" />
     <link rel="stylesheet" href="../css/footer.css" />
     <link rel="stylesheet" href="../css/registro.css" />
+    <link rel="stylesheet" href="../css/navbar.css" />
   </head>
   <body>
     <header>
-      <!--Inicio Navbar-->
+      <!-- Inicio Navbar -->
       <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container-fluid">
           <img src="../img/logo 1.png" alt="" class="img" />
-          <a class="navbar-brand me-auto" href="#">Victoriana Decoraciones</a>
+
+          <a class="navbar-brand me-auto d-none d-lg-block" href="../index.html"
+            >Victoriana Decoraciones</a
+          >
+
           <div
             class="offcanvas offcanvas-end"
             tabindex="-1"
@@ -41,9 +46,11 @@
           >
             <div class="offcanvas-header">
               <img src="../img/img_fondo_azul2.png" alt="" />
+
               <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
                 Victoriana Decoraciones
               </h5>
+
               <button
                 type="button"
                 class="btn-close"
@@ -51,6 +58,7 @@
                 aria-label="Close"
               ></button>
             </div>
+
             <div class="conteiner-elementos d-flex justify-content-around">
               <div class="offcanvas-body">
                 <ul class="navbar-nav flex-grow-1 pe-3">
@@ -59,31 +67,37 @@
                       class="nav-link mx-lg-2"
                       aria-current="page"
                       href="../index.html"
-                      >Inicio</a
                     >
+                      Inicio
+                    </a>
                   </li>
+
                   <li class="nav-item">
-                    <a class="nav-link mx-lg-2" href="../pages/contacto.html"
-                      >Contacto</a
-                    >
+                    <a class="nav-link mx-lg-2" href="../pages/contacto.html">
+                      Contacto
+                    </a>
                   </li>
+
                   <li class="nav-item">
                     <a
                       class="nav-link mx-lg-2"
                       href="../pages/sobre_nosotros.html"
-                      >Sobre Nosotros</a
                     >
+                      Sobre Nosotros
+                    </a>
                   </li>
+
                   <li class="nav-item">
                     <a
                       class="nav-link mx-lg-2"
                       href="../pages/cartelera-productos.html"
-                      >Galeria</a
                     >
+                      Galeria
+                    </a>
                   </li>
                 </ul>
 
-                <!-- Botones DENTRO de la hamburguesa (solo pantallas chicas) -->
+                <!-- Botones dentro de la hamburguesa -->
                 <div class="d-flex flex-column gap-3 d-lg-none mt-3">
                   <button
                     type="button"
@@ -94,18 +108,22 @@
                   >
                     Suscribirse
                   </button>
-                  <a href="../pages/login.html" class="login-button text-center"
-                    >Iniciar Sesión</a
+
+                  <a
+                    href="../pages/login.html"
+                    class="login-button text-center"
                   >
+                    Iniciar Sesión
+                  </a>
                 </div>
               </div>
             </div>
           </div>
 
+          <!-- Botones para pantallas grandes -->
           <div
             class="d-flex align-items-center justify-content-end gap-4 me-3 botones"
           >
-            <!-- Botones AFUERA (solo pantallas grandes) -->
             <div class="d-none d-lg-flex align-items-center gap-4">
               <button
                 type="button"
@@ -115,9 +133,10 @@
               >
                 Suscribirse
               </button>
-              <a href="../pages/login.html" class="login-button"
-                >Iniciar Sesión</a
-              >
+
+              <a href="../pages/login.html" class="login-button">
+                Iniciar Sesión
+              </a>
             </div>
 
             <!-- Botón hamburguesa -->
@@ -135,7 +154,7 @@
         </div>
       </nav>
 
-      <!-- MODAL DE SUSCRIPCIÓN (va fuera del nav, por ejemplo antes del </body>) -->
+      <!-- Modal de suscripción -->
       <div
         class="modal fade"
         id="modalSuscripcion"
@@ -149,6 +168,7 @@
               <h1 class="modal-title fs-5" id="modalSuscripcionLabel">
                 Suscribite a nuestro blog
               </h1>
+
               <button
                 type="button"
                 class="btn-close"
@@ -162,7 +182,10 @@
                 <p>Dejanos tus datos y recibí las novedades por email.</p>
 
                 <div class="mb-3">
-                  <label for="subNombre" class="col-form-label">Nombre:</label>
+                  <label for="subNombre" class="col-form-label">
+                    Nombre:
+                  </label>
+
                   <input
                     type="text"
                     class="form-control"
@@ -170,10 +193,12 @@
                     required
                   />
                 </div>
+
                 <div class="mb-3">
-                  <label for="subApellido" class="col-form-label"
-                    >Apellido:</label
-                  >
+                  <label for="subApellido" class="col-form-label">
+                    Apellido:
+                  </label>
+
                   <input
                     type="text"
                     class="form-control"
@@ -181,8 +206,10 @@
                     required
                   />
                 </div>
+
                 <div class="mb-3">
-                  <label for="subEmail" class="col-form-label">Email:</label>
+                  <label for="subEmail" class="col-form-label"> Email: </label>
+
                   <input
                     type="email"
                     class="form-control"
@@ -190,6 +217,7 @@
                     required
                   />
                 </div>
+
                 <div class="form-check">
                   <input
                     class="form-check-input"
@@ -197,6 +225,7 @@
                     id="subAcepto"
                     required
                   />
+
                   <label class="form-check-label" for="subAcepto">
                     Acepto recibir notificaciones por email
                   </label>
@@ -211,6 +240,7 @@
                 >
                   Cancelar
                 </button>
+
                 <button type="submit" class="btn btn-primary">
                   Suscribirme
                 </button>
@@ -219,7 +249,8 @@
           </div>
         </div>
       </div>
-      <!--Fin del Navbar-->
+
+      <!-- Fin del Navbar -->
     </header>
 
     <main>

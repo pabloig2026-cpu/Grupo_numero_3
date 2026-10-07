@@ -21,14 +21,14 @@
 .seccion-productos h3 {
   text-align: center;
   font-size: 28px;
-  color: #B59943;
+  color: #b59943;
   margin-bottom: 25px;
 }
 
 main h1 {
   font-size: 40px;
   text-align: center;
-  color: #B59943;
+  color: #b59943;
   margin-bottom: 25px;
 }
 
@@ -38,46 +38,41 @@ main h1 {
 
 h6 {
   text-align: center;
-  color: #B59943;
+  color: #b59943;
 }
 
 .img-css img {
-  height: 90vh;
+  height: 50vh;
   object-fit: cover;
   object-position: center bottom;
   margin: 30px 0px;
   top: 0;
 }
 
-/*responsive en mobile*/
-@media screen and (max-width: 800px) {
-  .img-css img {
-    height: 300px;
-    /* altura fija cómoda en mobile */
-  }
-}
-
-/*saco subrayado*/
 a {
   text-decoration: none;
 }
 
-.consulta-precio {
-  background-color: rgb(181, 153, 67);
-  padding: 15px 20px;
-  border-radius: 8px;
-  text-align: center;
-  display: inline-block;
-  transition: background-color 0.3s ease;
+.columna_aside {
+  background-color: #c2b6b4;
 }
 
-.consulta-precio:hover {
-  background-color: rgb(231, 213, 160);
+.columna_aside .card-header {
+  border-bottom: none;
+  color: #333;
+  font-size: 1.25rem;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.columna_aside .list-group-item a:hover {
+  text-decoration: underline;
 }
 
 @media screen and (max-width: 800px) {
   .container-detalle-producto {
     width: 90%;
+    grid-template-columns: repeat(1, 1fr);
     gap: 30px;
     padding: 35px 0;
   }

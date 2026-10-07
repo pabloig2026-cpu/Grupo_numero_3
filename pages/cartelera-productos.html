@@ -22,150 +22,227 @@
 <body>
   <header>
     <!-- Inicio Navbar -->
-    <nav class="navbar navbar-expand-lg fixed-top">
-      <div class="container-fluid">
-        <img src="../img/logo 1.png" alt="" class="img" />
+      <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container-fluid">
+          <img src="../img/logo 1.png" alt="" class="img" />
 
-        <a class="navbar-brand me-auto" href="#"> Victoriana Decoraciones </a>
+          <a class="navbar-brand me-auto d-none d-lg-block" href="../index.html"
+            >Victoriana Decoraciones</a
+          >
 
-        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-          <div class="offcanvas-header">
-            <img src="../img/img_fondo_azul2.png" alt="" />
+          <div
+            class="offcanvas offcanvas-end"
+            tabindex="-1"
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel"
+          >
+            <div class="offcanvas-header">
+              <img src="../img/img_fondo_azul2.png" alt="" />
 
-            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
-              Victoriana Decoraciones
-            </h5>
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                Victoriana Decoraciones
+              </h5>
 
-            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+
+            <div class="conteiner-elementos d-flex justify-content-around">
+              <div class="offcanvas-body">
+                <ul class="navbar-nav flex-grow-1 pe-3">
+                  <li class="nav-item">
+                    <a
+                      class="nav-link mx-lg-2"
+                      aria-current="page"
+                      href="../index.html"
+                    >
+                      Inicio
+                    </a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link mx-lg-2" href="../pages/contacto.html">
+                      Contacto
+                    </a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a
+                      class="nav-link mx-lg-2"
+                      href="../pages/sobre_nosotros.html"
+                    >
+                      Sobre Nosotros
+                    </a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a
+                      class="nav-link mx-lg-2"
+                      href="../pages/cartelera-productos.html"
+                    >
+                      Galeria
+                    </a>
+                  </li>
+                </ul>
+
+                <!-- Botones dentro de la hamburguesa -->
+                <div class="d-flex flex-column gap-3 d-lg-none mt-3">
+                  <button
+                    type="button"
+                    class="login-button text-center"
+                    data-bs-toggle="modal"
+                    data-bs-target="#modalSuscripcion"
+                    data-bs-dismiss="offcanvas"
+                  >
+                    Suscribirse
+                  </button>
+
+                  <a
+                    href="../pages/login.html"
+                    class="login-button text-center"
+                  >
+                    Iniciar Sesión
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
 
-          <div class="conteiner-elementos d-flex justify-content-around">
-            <div class="offcanvas-body">
-              <ul class="navbar-nav flex-grow-1 pe-3">
-                <li class="nav-item">
-                  <a class="nav-link mx-lg-2" aria-current="page" href="../index.html">
-                    Inicio
-                  </a>
-                </li>
+          <!-- Botones para pantallas grandes -->
+          <div
+            class="d-flex align-items-center justify-content-end gap-4 me-3 botones"
+          >
+            <div class="d-none d-lg-flex align-items-center gap-4">
+              <button
+                type="button"
+                class="login-button"
+                data-bs-toggle="modal"
+                data-bs-target="#modalSuscripcion"
+              >
+                Suscribirse
+              </button>
 
-                <li class="nav-item">
-                  <a class="nav-link mx-lg-2" href="../pages/contacto.html">
-                    Contacto
-                  </a>
-                </li>
+              <a href="../pages/login.html" class="login-button">
+                Iniciar Sesión
+              </a>
+            </div>
 
-                <li class="nav-item">
-                  <a class="nav-link mx-lg-2" href="../pages/sobre_nosotros.html">
-                    Sobre Nosotros
-                  </a>
-                </li>
+            <!-- Botón hamburguesa -->
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasNavbar"
+              aria-controls="offcanvasNavbar"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </div>
+        </div>
+      </nav>
 
-                <li class="nav-item">
-                  <a class="nav-link mx-lg-2 active" href="../pages/cartelera-productos.html">
-                    Galeria
-                  </a>
-                </li>
-              </ul>
+      <!-- Modal de suscripción -->
+      <div
+        class="modal fade"
+        id="modalSuscripcion"
+        tabindex="-1"
+        aria-labelledby="modalSuscripcionLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="modalSuscripcionLabel">
+                Suscribite a nuestro blog
+              </h1>
 
-              <!-- Botones dentro de la hamburguesa -->
-              <div class="d-flex flex-column gap-3 d-lg-none mt-3">
-                <button type="button" class="login-button text-center" data-bs-toggle="modal"
-                  data-bs-target="#modalSuscripcion" data-bs-dismiss="offcanvas">
-                  Suscribirse
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Cerrar"
+              ></button>
+            </div>
+
+            <form id="formSuscripcion">
+              <div class="modal-body">
+                <p>Dejanos tus datos y recibí las novedades por email.</p>
+
+                <div class="mb-3">
+                  <label for="subNombre" class="col-form-label">
+                    Nombre:
+                  </label>
+
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="subNombre"
+                    required
+                  />
+                </div>
+
+                <div class="mb-3">
+                  <label for="subApellido" class="col-form-label">
+                    Apellido:
+                  </label>
+
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="subApellido"
+                    required
+                  />
+                </div>
+
+                <div class="mb-3">
+                  <label for="subEmail" class="col-form-label"> Email: </label>
+
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="subEmail"
+                    required
+                  />
+                </div>
+
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    id="subAcepto"
+                    required
+                  />
+
+                  <label class="form-check-label" for="subAcepto">
+                    Acepto recibir notificaciones por email
+                  </label>
+                </div>
+              </div>
+
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  data-bs-dismiss="modal"
+                >
+                  Cancelar
                 </button>
 
-                <a href="../pages/login.html" class="login-button text-center">
-                  Iniciar Sesión
-                </a>
+                <button type="submit" class="btn btn-primary">
+                  Suscribirme
+                </button>
               </div>
-            </div>
+            </form>
           </div>
-        </div>
-
-        <!-- Botones para pantallas grandes -->
-        <div class="d-flex align-items-center justify-content-end gap-4 me-3 botones">
-          <div class="d-none d-lg-flex align-items-center gap-4">
-            <button type="button" class="login-button" data-bs-toggle="modal" data-bs-target="#modalSuscripcion">
-              Suscribirse
-            </button>
-
-            <a href="../pages/login.html" class="login-button">
-              Iniciar Sesión
-            </a>
-          </div>
-
-          <!-- Botón hamburguesa -->
-          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
-            aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
         </div>
       </div>
-    </nav>
 
-    <!-- Modal de suscripción -->
-    <div class="modal fade" id="modalSuscripcion" tabindex="-1" aria-labelledby="modalSuscripcionLabel"
-      aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h1 class="modal-title fs-5" id="modalSuscripcionLabel">
-              Suscribite a nuestro blog
-            </h1>
-
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
-          </div>
-
-          <form id="formSuscripcion">
-            <div class="modal-body">
-              <p>Dejanos tus datos y recibí las novedades por email.</p>
-
-              <div class="mb-3">
-                <label for="subNombre" class="col-form-label">
-                  Nombre:
-                </label>
-
-                <input type="text" class="form-control" id="subNombre" required />
-              </div>
-
-              <div class="mb-3">
-                <label for="subApellido" class="col-form-label">
-                  Apellido:
-                </label>
-
-                <input type="text" class="form-control" id="subApellido" required />
-              </div>
-
-              <div class="mb-3">
-                <label for="subEmail" class="col-form-label"> Email: </label>
-
-                <input type="email" class="form-control" id="subEmail" required />
-              </div>
-
-              <div class="form-check">
-                <input class="form-check-input" type="checkbox" id="subAcepto" required />
-
-                <label class="form-check-label" for="subAcepto">
-                  Acepto recibir notificaciones por email
-                </label>
-              </div>
-            </div>
-
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
-                Cancelar
-              </button>
-
-              <button type="submit" class="btn btn-primary">
-                Suscribirme
-              </button>
-            </div>
-          </form>
-        </div>
-      </div>
-    </div>
-
-    <!-- Fin del Navbar -->
+      <!-- Fin del Navbar -->
   </header>
 
   <main>
@@ -403,7 +480,7 @@
         <div class="col">
           <a href="../pages/detalle_Producto04.html">
             <div class="card h-100">
-              <img src="../img/gal-prod/pilow/pilow-01.jpeg" class="card-img-top" alt="Pilow" />
+              <img src="../img/gal-prod/pilow/pilow-011.jpeg" class="card-img-top" alt="Pilow" />
 
               <div class="card-body">
                 <h6>Pillow de Asiento Rayado Grey Style</h6>
