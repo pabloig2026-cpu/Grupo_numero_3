@@ -27,15 +27,14 @@
 
   <body>
     <header>
+      <!-- Inicio Navbar -->
       <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container-fluid">
-          <img
-            src="./img/logo 1.png"
-            alt="Logo Victoriana Decoraciones"
-            class="img"
-          />
+          <img src="../img/logo 1.png" alt="" class="img" />
 
-          <a class="navbar-brand me-auto" href="#"> Victoriana Decoraciones </a>
+          <a class="navbar-brand me-auto d-none d-lg-block" href="../index.html"
+            >Victoriana Decoraciones</a
+          >
 
           <div
             class="offcanvas offcanvas-end"
@@ -44,10 +43,7 @@
             aria-labelledby="offcanvasNavbarLabel"
           >
             <div class="offcanvas-header">
-              <img
-                src="./img/img_fondo_azul2.png"
-                alt="Victoriana Decoraciones"
-              />
+              <img src="../img/img_fondo_azul2.png" alt="" />
 
               <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
                 Victoriana Decoraciones
@@ -57,7 +53,7 @@
                 type="button"
                 class="btn-close"
                 data-bs-dismiss="offcanvas"
-                aria-label="Cerrar"
+                aria-label="Close"
               ></button>
             </div>
 
@@ -68,7 +64,7 @@
                     <a
                       class="nav-link mx-lg-2 active"
                       aria-current="page"
-                      href="index.html"
+                      href="./index.html"
                     >
                       Inicio
                     </a>
@@ -99,6 +95,7 @@
                   </li>
                 </ul>
 
+                <!-- Botones dentro de la hamburguesa -->
                 <div class="d-flex flex-column gap-3 d-lg-none mt-3">
                   <button
                     type="button"
@@ -110,7 +107,10 @@
                     Suscribirse
                   </button>
 
-                  <a href="./pages/login.html" class="login-button text-center">
+                  <a
+                    href="./pages/login.html"
+                    class="login-button text-center"
+                  >
                     Iniciar Sesión
                   </a>
                 </div>
@@ -118,6 +118,7 @@
             </div>
           </div>
 
+          <!-- Botones para pantallas grandes -->
           <div
             class="d-flex align-items-center justify-content-end gap-4 me-3 botones"
           >
@@ -136,6 +137,7 @@
               </a>
             </div>
 
+            <!-- Botón hamburguesa -->
             <button
               class="navbar-toggler"
               type="button"
@@ -150,6 +152,7 @@
         </div>
       </nav>
 
+      <!-- Modal de suscripción -->
       <div
         class="modal fade"
         id="modalSuscripcion"
@@ -244,6 +247,8 @@
           </div>
         </div>
       </div>
+
+      <!-- Fin del Navbar -->
     </header>
 
     <main>

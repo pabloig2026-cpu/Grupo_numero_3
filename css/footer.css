@@ -49,13 +49,13 @@
 }
 
 .pie-pagina .grupo-1 .box h2 {
-  color: aliceblue;
+  color: #211f1f;
   margin-bottom: 25px;
   font-size: 20px;
 }
 
 .pie-pagina .grupo-1 .box p {
-  color: #efefef;
+  color: #211f1f;
   margin-bottom: 10px;
   font-size: 15px;
 }
@@ -66,7 +66,7 @@
   width: 45px;
   height: 45px;
   line-height: 45px;
-  color: white;
+  color: #211f1f;
   margin-right: 10px;
   background-color: rgb(213, 218, 218);
 
