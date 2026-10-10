@@ -1,372 +1,275 @@
 <!doctype html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="author" content="Grupo 3 - RC" />
-    <meta name="description" content="Pagina para venta de decoraciones" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Victoriana Deco</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
-    />
-    <link rel="stylesheet" href="../css/estilos.css" />
-    <link rel="stylesheet" href="../css/footer.css" />
-    <link rel="stylesheet" href="../css/navbar.css" />
-  </head>
 
-  <body>
-    <header>
-      <!-- Inicio Navbar -->
-      <nav class="navbar navbar-expand-lg fixed-top">
-        <div class="container-fluid">
-          <img src="../img/logo 1.png" alt="" class="img" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="author" content="Grupo 3 - RC" />
+  <meta name="description" content="Pagina para venta de decoraciones" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Victoriana Deco</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" />
+  <link rel="stylesheet" href="../css/estilos.css" />
+  <link rel="stylesheet" href="../css/footer.css" />
+  <link rel="stylesheet" href="../css/navbar.css" />
+</head>
 
-          <a class="navbar-brand me-auto d-none d-lg-block" href="../index.html"
-            >Victoriana Decoraciones</a
-          >
+<body>
+  <header>
+    <!-- Inicio Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+      <div class="container-fluid">
+        <img src="../img/logo 1.png" alt="" class="img" />
 
-          <div
-            class="offcanvas offcanvas-end"
-            tabindex="-1"
-            id="offcanvasNavbar"
-            aria-labelledby="offcanvasNavbarLabel"
-          >
-            <div class="offcanvas-header">
-              <img src="../img/img_fondo_azul2.png" alt="" />
+        <a class="navbar-brand me-auto d-none d-lg-block" href="../index.html">Victoriana Decoraciones</a>
 
-              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
-                Victoriana Decoraciones
-              </h5>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <img src="../img/img_fondo_azul2.png" alt="" />
 
-              <button
-                type="button"
-                class="btn-close"
-                data-bs-dismiss="offcanvas"
-                aria-label="Close"
-              ></button>
-            </div>
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+              Victoriana Decoraciones
+            </h5>
 
-            <div class="conteiner-elementos d-flex justify-content-around">
-              <div class="offcanvas-body">
-                <ul class="navbar-nav flex-grow-1 pe-3">
-                  <li class="nav-item">
-                    <a
-                      class="nav-link mx-lg-2"
-                      aria-current="page"
-                      href="../index.html"
-                    >
-                      Inicio
-                    </a>
-                  </li>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
 
-                  <li class="nav-item">
-                    <a class="nav-link mx-lg-2" href="../pages/contacto.html">
-                      Contacto
-                    </a>
-                  </li>
-
-                  <li class="nav-item">
-                    <a
-                      class="nav-link mx-lg-2"
-                      href="../pages/sobre_nosotros.html"
-                    >
-                      Sobre Nosotros
-                    </a>
-                  </li>
-
-                  <li class="nav-item">
-                    <a
-                      class="nav-link mx-lg-2"
-                      href="../pages/cartelera-productos.html"
-                    >
-                      Galeria
-                    </a>
-                  </li>
-                </ul>
-
-                <!-- Botones dentro de la hamburguesa -->
-                <div class="d-flex flex-column gap-3 d-lg-none mt-3">
-                  <button
-                    type="button"
-                    class="login-button text-center"
-                    data-bs-toggle="modal"
-                    data-bs-target="#modalSuscripcion"
-                    data-bs-dismiss="offcanvas"
-                  >
-                    Suscribirse
-                  </button>
-
-                  <a
-                    href="../pages/login.html"
-                    class="login-button text-center"
-                  >
-                    Iniciar Sesión
+          <div class="conteiner-elementos d-flex justify-content-around">
+            <div class="offcanvas-body">
+              <ul class="navbar-nav flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link mx-lg-2" aria-current="page" href="../index.html">
+                    Inicio
                   </a>
-                </div>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link mx-lg-2" href="../pages/contacto.html">
+                    Contacto
+                  </a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link mx-lg-2" href="../pages/sobre_nosotros.html">
+                    Sobre Nosotros
+                  </a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link mx-lg-2" href="../pages/cartelera-productos.html">
+                    Galeria
+                  </a>
+                </li>
+              </ul>
+
+              <!-- Botones dentro de la hamburguesa -->
+              <div class="d-flex flex-column gap-3 d-lg-none mt-3">
+                <button type="button" class="login-button text-center" data-bs-toggle="modal"
+                  data-bs-target="#modalSuscripcion" data-bs-dismiss="offcanvas">
+                  Suscribirse
+                </button>
+
+                <a href="../pages/login.html" class="login-button text-center">
+                  Iniciar Sesión
+                </a>
               </div>
             </div>
           </div>
+        </div>
 
-          <!-- Botones para pantallas grandes -->
-          <div
-            class="d-flex align-items-center justify-content-end gap-4 me-3 botones"
-          >
-            <div class="d-none d-lg-flex align-items-center gap-4">
-              <button
-                type="button"
-                class="login-button"
-                data-bs-toggle="modal"
-                data-bs-target="#modalSuscripcion"
-              >
-                Suscribirse
+        <!-- Botones para pantallas grandes -->
+        <div class="d-flex align-items-center justify-content-end gap-4 me-3 botones">
+          <div class="d-none d-lg-flex align-items-center gap-4">
+            <button type="button" class="login-button" data-bs-toggle="modal" data-bs-target="#modalSuscripcion">
+              Suscribirse
+            </button>
+
+            <a href="../pages/login.html" class="login-button">
+              Iniciar Sesión
+            </a>
+          </div>
+
+          <!-- Botón hamburguesa -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Modal de suscripción -->
+    <div class="modal fade" id="modalSuscripcion" tabindex="-1" aria-labelledby="modalSuscripcionLabel"
+      aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="modalSuscripcionLabel">
+              Suscribite a nuestro blog
+            </h1>
+
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+          </div>
+
+          <form id="formSuscripcion">
+            <div class="modal-body">
+              <p>Dejanos tus datos y recibí las novedades por email.</p>
+
+              <div class="mb-3">
+                <label for="subNombre" class="col-form-label">
+                  Nombre:
+                </label>
+
+                <input type="text" class="form-control" id="subNombre" required />
+              </div>
+
+              <div class="mb-3">
+                <label for="subApellido" class="col-form-label">
+                  Apellido:
+                </label>
+
+                <input type="text" class="form-control" id="subApellido" required />
+              </div>
+
+              <div class="mb-3">
+                <label for="subEmail" class="col-form-label"> Email: </label>
+
+                <input type="email" class="form-control" id="subEmail" required />
+              </div>
+
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="subAcepto" required />
+
+                <label class="form-check-label" for="subAcepto">
+                  Acepto recibir notificaciones por email
+                </label>
+              </div>
+            </div>
+
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                Cancelar
               </button>
 
-              <a href="../pages/login.html" class="login-button">
-                Iniciar Sesión
-              </a>
+              <button type="submit" class="btn btn-primary">
+                Suscribirme
+              </button>
             </div>
-
-            <!-- Botón hamburguesa -->
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-bs-toggle="offcanvas"
-              data-bs-target="#offcanvasNavbar"
-              aria-controls="offcanvasNavbar"
-              aria-label="Toggle navigation"
-            >
-              <span class="navbar-toggler-icon"></span>
-            </button>
-          </div>
-        </div>
-      </nav>
-
-      <!-- Modal de suscripción -->
-      <div
-        class="modal fade"
-        id="modalSuscripcion"
-        tabindex="-1"
-        aria-labelledby="modalSuscripcionLabel"
-        aria-hidden="true"
-      >
-        <div class="modal-dialog modal-dialog-centered">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h1 class="modal-title fs-5" id="modalSuscripcionLabel">
-                Suscribite a nuestro blog
-              </h1>
-
-              <button
-                type="button"
-                class="btn-close"
-                data-bs-dismiss="modal"
-                aria-label="Cerrar"
-              ></button>
-            </div>
-
-            <form id="formSuscripcion">
-              <div class="modal-body">
-                <p>Dejanos tus datos y recibí las novedades por email.</p>
-
-                <div class="mb-3">
-                  <label for="subNombre" class="col-form-label">
-                    Nombre:
-                  </label>
-
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="subNombre"
-                    required
-                  />
-                </div>
-
-                <div class="mb-3">
-                  <label for="subApellido" class="col-form-label">
-                    Apellido:
-                  </label>
-
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="subApellido"
-                    required
-                  />
-                </div>
-
-                <div class="mb-3">
-                  <label for="subEmail" class="col-form-label"> Email: </label>
-
-                  <input
-                    type="email"
-                    class="form-control"
-                    id="subEmail"
-                    required
-                  />
-                </div>
-
-                <div class="form-check">
-                  <input
-                    class="form-check-input"
-                    type="checkbox"
-                    id="subAcepto"
-                    required
-                  />
-
-                  <label class="form-check-label" for="subAcepto">
-                    Acepto recibir notificaciones por email
-                  </label>
-                </div>
-              </div>
-
-              <div class="modal-footer">
-                <button
-                  type="button"
-                  class="btn btn-secondary"
-                  data-bs-dismiss="modal"
-                >
-                  Cancelar
-                </button>
-
-                <button type="submit" class="btn btn-primary">
-                  Suscribirme
-                </button>
-              </div>
-            </form>
-          </div>
+          </form>
         </div>
       </div>
+    </div>
 
-      <!-- Fin del Navbar -->
-    </header>
-    <main>
-      <div class="container container-detalle-producto">
-        <div class="row justify-content-center align-items-center">
-          <div class="col">
-            <section class="seccion-productos container img-css">
-              <img
-                src="../img/gal-prod/almohadas/almohadones-01.jpeg"
-                class="card-img-top img-fluid"
-                alt="Almohadón decorativo"
-              />
-            </section>
-            <!-- ...para mostrar... -->
-          </div>
-          <div class="col">
-            <h1>Almohadones Estilo Minimalista & Warm</h1>
-            <h3>Descripción del Producto</h3>
-            <p class="card-text">
-              Confeccionados en textiles de tono marfil con franjas y texturas
-              negras. Combinación perfecta entre confort, simplicidad y
-              sofisticación para salas de estar modernas. Diseñados para
-              transformar tu sala de estar en un espacio acogedor y de
-              vanguardia, esta colección rinde homenaje a la estética Warm
-              Minimalist.
-            </p>
-            <h3>Especificaciones & Características</h3>
-            <ul>
-              <li>
-                <strong>Materiales:</strong> Lino rústico y algodón de alta
-                densidad, suaves al tacto y de gran durabilidad.
-              </li>
-              <li>
-                <strong>Paleta:</strong> Crudo / Marfil natural con acentos en
-                Negro Carbón.
-              </li>
-              <li>
-                <strong>Confección:</strong> Detalles en relieve, fruncidos
-                artesanales y costuras reforzadas de alta precisión.
-              </li>
-              <li>
-                <strong>Relleno:</strong> Vellón siliconado de alta resiliencia,
-                ultra mullido y diseñado para mantener su forma.
-              </li>
-              <li>
-                <strong>Mantenimiento:</strong> Fundas desmontables con cierre
-                solapado invisible, aptas para lavado delicado.
-              </li>
-            </ul>
-            <p class="consulta-precio">
-              Consulta precios o solicita un presupuesto
-              <strong
-                ><a
-                  href="https://api.whatsapp.com/send/?phone=54381XXXXXXX&text&type=phone_number&app_absent=0"
-                  >AQUI</a
-                ></strong
-              >
-            </p>
-          </div>
+    <!-- Fin del Navbar -->
+  </header>
+  <main>
+    <div class="container container-detalle-producto">
+      <div class="row justify-content-center align-items-center">
+        <div class="col">
+          <section class="seccion-productos container img-css">
+            <img src="../img/gal-prod/almohadas/almohadones-01.jpeg" class="card-img-top img-fluid"
+              alt="Almohadón decorativo" />
+          </section>
+          <!-- ...para mostrar... -->
+        </div>
+        <div class="col-12 col-md-6">
+          <h1>Almohadones Estilo Minimalista & Warm</h1>
+          <h3>Descripción del Producto</h3>
+          <p class="card-text">
+            Confeccionados en textiles de tono marfil con franjas y texturas
+            negras. Combinación perfecta entre confort, simplicidad y
+            sofisticación para salas de estar modernas. Diseñados para
+            transformar tu sala de estar en un espacio acogedor y de
+            vanguardia, esta colección rinde homenaje a la estética Warm
+            Minimalist.
+          </p>
+          <h3>Especificaciones & Características</h3>
+          <ul>
+            <li>
+              <strong>Materiales:</strong> Lino rústico y algodón de alta
+              densidad, suaves al tacto y de gran durabilidad.
+            </li>
+            <li>
+              <strong>Paleta:</strong> Crudo / Marfil natural con acentos en
+              Negro Carbón.
+            </li>
+            <li>
+              <strong>Confección:</strong> Detalles en relieve, fruncidos
+              artesanales y costuras reforzadas de alta precisión.
+            </li>
+            <li>
+              <strong>Relleno:</strong> Vellón siliconado de alta resiliencia,
+              ultra mullido y diseñado para mantener su forma.
+            </li>
+            <li>
+              <strong>Mantenimiento:</strong> Fundas desmontables con cierre
+              solapado invisible, aptas para lavado delicado.
+            </li>
+          </ul>
+          <p class="consulta-precio">
+            Consulta precios o solicita un presupuesto
+            <strong><a
+                href="https://api.whatsapp.com/send/?phone=54381XXXXXXX&text&type=phone_number&app_absent=0">AQUI</a></strong>
+          </p>
         </div>
       </div>
-    </main>
-    <footer class="pie-pagina">
-      <div class="grupo-1">
-        <div class="box">
-          <a href="../index.html">
-            <img src="../img/imagen_logo3.png" alt="Logo de Blog" />
+    </div>
+  </main>
+  <footer class="pie-pagina">
+    <div class="grupo-1">
+      <div class="box">
+        <a href="../index.html">
+          <img src="../img/imagen_logo3.png" alt="Logo de Blog" />
+        </a>
+      </div>
+
+      <div class="box">
+        <h2>Acerca de Nosotros</h2>
+
+        <p>
+          Somos un emprendimiento dedicado a la venta de decoraciones
+          puntualmente de Almohadas, Espejos, Textiles, Melaminas y Pie de
+          cama para crear espacios únicos y especiales.
+        </p>
+        <p>
+          Trabajamos para ofrecer y brindar productos de gran calidad y
+          diseños para diferentes ocasiones, desempeñamos nuestra actividad
+          actualmente en la Provincia de Tucumán.
+        </p>
+      </div>
+
+      <div class="box">
+        <h2>Nuestras Redes Sociales:</h2>
+
+        <div class="red-social">
+          <a href="https://www.instagram.com/victorianadecoraciones?stkn=MTE3dDRka3M0aXA4YQ==" target="_blank">
+            <i class="bi bi-instagram"></i>
+          </a>
+
+          <a href="https://www.facebook.com/share/18bFDSwna4/" target="_blank">
+            <i class="bi bi-facebook"></i>
+          </a>
+
+          <a href="./pages/error_404.html">
+            <i class="bi bi-twitter-x"></i>
+          </a>
+
+          <a href="./pages/error_404.html">
+            <i class="bi bi-youtube"></i>
           </a>
         </div>
-
-        <div class="box">
-          <h2>Acerca de Nosotros</h2>
-
-          <p>
-            Somos un emprendimiento dedicado a la venta de decoraciones
-            puntualmente de Almohadas, Espejos, Textiles, Melaminas y Pie de
-            cama para crear espacios únicos y especiales.
-          </p>
-          <p>
-            Trabajamos para ofrecer y brindar productos de gran calidad y
-            diseños para diferentes ocasiones, desempeñamos nuestra actividad
-            actualmente en la Provincia de Tucumán.
-          </p>
-        </div>
-
-        <div class="box">
-          <h2>Nuestras Redes Sociales:</h2>
-
-          <div class="red-social">
-            <a
-              href="https://www.instagram.com/victorianadecoraciones?stkn=MTE3dDRka3M0aXA4YQ=="
-              target="_blank"
-            >
-              <i class="bi bi-instagram"></i>
-            </a>
-
-            <a
-              href="https://www.facebook.com/share/18bFDSwna4/"
-              target="_blank"
-            >
-              <i class="bi bi-facebook"></i>
-            </a>
-
-            <a href="./pages/error_404.html">
-              <i class="bi bi-twitter-x"></i>
-            </a>
-
-            <a href="./pages/error_404.html">
-              <i class="bi bi-youtube"></i>
-            </a>
-          </div>
-        </div>
       </div>
+    </div>
 
-      <div class="grupo-2">
-        <p>Año 2026 --- TODOS LOS DERECHOS RESERVADOS ----</p>
-      </div>
-    </footer>
+    <div class="grupo-2">
+      <p>Año 2026 --- TODOS LOS DERECHOS RESERVADOS ----</p>
+    </div>
+  </footer>
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>
